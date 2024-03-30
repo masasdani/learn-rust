@@ -1,0 +1,19 @@
+# Compiled files
+**/target/
+
+# Dependency directories
+**/Cargo.lock
+**/Cargo.toml.orig
+
+# Generated documentation
+**/doc/
+
+# Build output
+**/build/
+
+# Editor and IDE files
+**/.vscode/
+**/.idea/
+
+# Miscellaneous
+**/.DS_Store
