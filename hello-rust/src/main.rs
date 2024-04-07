@@ -1,5 +1,8 @@
+mod utils;
 
 use std::{env, str::FromStr};
+
+use crate::utils::generate_secure_random_string_lowercase;
 
 fn main() {
 
@@ -20,7 +23,10 @@ fn main() {
         d = gcd(d, *m);
     }
 
+    generate_secure_random_string_lowercase(10);
+
     println!("The greatest common divisor of {:?} is {}", numbers, d);
+    
 }
 
 
@@ -41,4 +47,10 @@ fn gcd(mut n: u64, mut m: u64) -> u64 {
 #[test]
 fn test_gcd() {
     assert_eq!(gcd(14, 15), 1);
+}
+
+#[test]
+fn test_random_string() {
+    let random_string = generate_secure_random_string_lowercase(10);
+    assert_eq!(random_string.len(), 10);
 }
