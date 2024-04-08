@@ -2,7 +2,6 @@ use actix_web::{web, App, HttpResponse, HttpServer};
 
 mod utils;
 mod controllers;
-mod config;
 mod api;
 mod service;
 

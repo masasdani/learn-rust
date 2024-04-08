@@ -1,0 +1,11 @@
+server:
+  host: "127.0.0.1"
+  port: 8080
+  domain: "http://localost:8080"
+
+mongo:
+  username: "root"
+  password: "root
+  host: "localhost"
+  port: 27017
+  database: "hello-actix"
